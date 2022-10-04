@@ -14,3 +14,6 @@ else
 fi
 echo "POTENTIAL_DUMMY_FILE_NAME is $POTENTIAL_DUMMY_FILE_NAME"
 touch $POTENTIAL_DUMMY_FILE_NAME
+git add $POTENTIAL_DUMMY_FILE_NAME
+git commit . -m "$POTENTIAL_DUMMY_FILE_NAME has been added to repository"
+git push
